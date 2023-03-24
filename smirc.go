@@ -165,21 +165,21 @@ func handlerSendMessage(w http.ResponseWriter, r *http.Request) {
 
 func handlerGetMessagesForChannel(w http.ResponseWriter, r *http.Request) {
 	content := `<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
-	<head><title>minirc: messages</title><meta http-equiv="refresh" content="1"></head>
+	<head><title>smirc: messages</title><meta http-equiv="refresh" content="1"></head>
     <body>` + irc.GetMessagesForChatRoom(irc.config.Channel) + `</body></html>`
 	_, _ = fmt.Fprintf(w, "%s", content)
 }
 
 func handlerGetUsersForChannel(w http.ResponseWriter, r *http.Request) {
 	content := `<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
-	<head><title>minirc: users</title><meta http-equiv="refresh" content="5"></head>
+	<head><title>smirc: users</title><meta http-equiv="refresh" content="5"></head>
     <body><strong>Users:</strong> ` + irc.GetUsersForChannel() + `</body></html>`
 	_, _ = fmt.Fprintf(w, "%s", content)
 }
 
 func handlerIndex(w http.ResponseWriter, r *http.Request) {
 	content := `<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
-	<head><title>minirc</title></head><body>
+	<head><title>smirc</title></head><body>
       <iframe marginwidth="0" marginheight="0" width="500" height="500" scrolling="no" frameborder=0 src="` + endPointGetMessagesForChannel + `">
       </iframe>
       <iframe marginwidth="0" marginheight="0" width="500" height="25" scrolling="no" frameborder=0 src="` + endPointGetUsersForChannel + `">
