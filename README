@@ -1,9 +1,0 @@
-Minimalistic IRC client in Go.
-
-Principles:
-- everything in one file
-- no Javascript
-- no unnecessary features
-
-
-See: https://www.ietf.org/rfc/rfc1459.txt
