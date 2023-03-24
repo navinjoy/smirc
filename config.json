@@ -1,0 +1,7 @@
+{
+    "nickname": "WhatIsYourNickName",
+    "server": "irc.freenode.net",
+    "port": 6667,
+    "channel": "#midnightcafe",
+    "web-server-port-number": 8080
+}
