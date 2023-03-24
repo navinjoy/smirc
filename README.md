@@ -1,4 +1,4 @@
-# Minimalistic IRC client in Go.
+# Super Minima IRC client in Go - smirc.go
 
 ## Principles:
   - everything in one file
